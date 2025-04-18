@@ -10,7 +10,7 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/add", method=["GET", "POST"])
+@app.route("/add", methods=["GET", "POST"])
 def add():
     if request.method == "POST":
         new_book = {
